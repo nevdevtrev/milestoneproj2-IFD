@@ -1,18 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.5.0/sandstone/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-<link rel="stylesheet" href="assets/css/style.css">
-<title>Title</title>
-</head>
-<body>
+<html>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<head>
+    <title>botanica</title>
+    <script type="text/javascript" src="main.js"></script>
+</head>
+
+<body>
+    <div id="demo"></div>
+<script>
+// var xhttp = new XMLHttpRequest();
+// xhttp.onreadystatechange = function() {
+//     if (this.readyState == 4 && this.status == 200) {
+//        // Typical action to be performed when the document is ready:
+//        document.getElementById("demo").innerHTML = xhttp.responseText;
+//     }
+// };
+// xhttp.open("GET", "https://trefle.io/api/v1/genus?token=xZdwhLJkl2fG_mT8hBXqjOkDmrks-zZChxVLMBtFo8k");
+// xhttp.send();
+
+
+
+
+// const fetch = require('node-fetch');
+
+// (async () => {
+//   const response = await fetch('https://trefle.io/api/v1/species?token=xZdwhLJkl2fG_mT8hBXqjOkDmrks-zZChxVLMBtFo8k');
+//   const json = await response.json();
+//   console.log(json);
+// })();
+  
+  
+var data = null;
+
+var xhr = new XMLHttpRequest();
+xhr.withCredentials = true;
+
+xhr.addEventListener("readystatechange", function () {
+	if (this.readyState === this.DONE) {
+		console.log(this.responseText);
+	}
+});
+
+xhr.open("GET", "https://wordsapiv1.p.rapidapi.com/words/bloody/similarTo");
+xhr.setRequestHeader("x-rapidapi-host", "wordsapiv1.p.rapidapi.com");
+xhr.setRequestHeader("x-rapidapi-key", "36ada5db87msh73b5dd805c85aeep1cb3e4jsn6ffb9e5c1eb7");
+
+xhr.send(data);
+
+</script>
 </body>
+
 </html>
