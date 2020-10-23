@@ -1,16 +1,12 @@
-var api_key = xZdwhLJkl2fG_mT8hBXqjOkDmrks-zZChxVLMBtFo8k;
+const apikey = "21be1451239088fddf79953b709ddac0";
+
+fetch('https://gnews.io/api/v4/search?q=example&token=apikey')
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        console.log(data);
+    });
 
 
 
-
-
-
-var xhttp = new XMLHttpRequest();
-xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-       // Typical action to be performed when the document is ready:
-       document.getElementById("demo").innerHTML = xhttp.responseText;
-    }
-};
-xhttp.open("GET", "https://ci-swapi.herokuapp.com/api/", true);
-xhttp.send();
