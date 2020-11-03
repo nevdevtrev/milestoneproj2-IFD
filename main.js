@@ -1,5 +1,4 @@
 document.getElementById("articles").addEventListener("click", loadREST);
-document.getElementById("test").addEventListener("click", tester);
 
 function loadREST() {
   fetch(
@@ -8,15 +7,7 @@ function loadREST() {
     .then(function (response) {
       return response.json();
     })
-    // .then(function (data) {
-    //   console.dir(data);
-    //   let html = "";
-    //   data.forEach((data) => {
-    //     html = `<li> ${data.articles}</li>`;
 
-    //     document.getElementById("demo").innerHTML = html;
-    //   });
-    // })
     .then(function(data) {
       console.log(data);
       data = data.articles;
@@ -32,11 +23,3 @@ function loadREST() {
     });
 }
 
-// showData = (data) => {
-//   const dataDiv = document.querySelector("#top-articles");
-//   data.forEach(articles => {
-//     const articlesElement = document.createElement("p");
-//     articlesElement.innerText = `Article Title: ${articles.title}`;
-//     dataDiv.append(articlesElement);
-//   });
-// };
