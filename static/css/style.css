@@ -1,0 +1,22 @@
+img {
+    Height:auto;
+    width: 100%;
+}
+
+body {
+    font-size: 2em;
+    color:black;
+}
+
+footer, header {
+    height: 30px;
+    width: 100%
+    text-align: center;
+
+}
+
+header {
+background-color: grey;
+text-align: center;
+margin: 10px;
+}
