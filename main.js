@@ -20,7 +20,7 @@ function headlinesCALL() {
       let html = "";
       data.forEach(function(item) {
            html += `<li> ${item.title} + <img id="newsimage" src= ${item.image}> </li>`;
-           document.getElementById("demo").innerHTML = html;
+           document.getElementById("display").innerHTML = html;
       })
     //   showData(data.articles);
     })
@@ -44,7 +44,7 @@ function sportCALL() {
       let html = "";
       data.forEach(function(item) {
            html += `<li> ${item.title} + <img id="newsimage" src= ${item.image}> </li>`;
-           document.getElementById("demo").innerHTML = html;
+           document.getElementById("display").innerHTML = html;
       })
     })
     .catch(function (err) {
@@ -66,7 +66,7 @@ function entertainmentCALL() {
       let html = "";
       data.forEach(function(item) {
            html += `<li> ${item.title} + <img id="newsimage" src= ${item.image}> </li>`;
-           document.getElementById("demo").innerHTML = html;
+           document.getElementById("display").innerHTML = html;
       })
     })
     .catch(function (err) {
@@ -87,8 +87,9 @@ function businessCALL() {
       data = data.articles;
       let html = "";
       data.forEach(function(item) {
-           html += `<li> ${item.title} + <img id="newsimage" src= ${item.image}> </li>`;
-           document.getElementById("demo").innerHTML = html;
+      html += `<li data-toggle="collapse" data-target="#description"> <b>${item.title}</b> <br> <div id="description" class="collapse">${item.description}</div><a href="${item.url}">More...</a> <br> <img id="newsimage" src= ${item.image}> </li>`;
+           $("#display").css("list-style-type","none");
+           document.getElementById("display").innerHTML = html;
       })
     })
     .catch(function (err) {
@@ -110,7 +111,7 @@ function artsCALL() {
       let html = "";
       data.forEach(function(item) {
            html += `<li> ${item.title} + <img id="newsimage" src= ${item.image}> </li>`;
-           document.getElementById("demo").innerHTML = html;
+           document.getElementById("display").innerHTML = html;
       })
     })
     .catch(function (err) {
@@ -132,7 +133,7 @@ function fashionCALL() {
       let html = "";
       data.forEach(function(item) {
            html += `<li> ${item.title} + <img id="newsimage" src= ${item.image}> </li>`;
-           document.getElementById("demo").innerHTML = html;
+           document.getElementById("display").innerHTML = html;
       })
     })
     .catch(function (err) {
@@ -153,8 +154,8 @@ function worldCALL() {
       data = data.articles;
       let html = "";
       data.forEach(function(item) {
-           html += `<li> ${item.title} + <img id="newsimage" src= ${item.image}> </li>`;
-           document.getElementById("demo").innerHTML = html;
+           html += `<li id="nostyle"> ${item.title} + <img id="newsimage" src= ${item.image}> </li>`;
+           document.getElementById("display").innerHTML = html;
       })
     })
     .catch(function (err) {

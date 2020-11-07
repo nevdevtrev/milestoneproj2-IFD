@@ -7,18 +7,17 @@ body {
     position: relative;
     font-size: 16px;
     font-family: 'Amatic SC', cursive;
+    background-color: black;
+    color:grey;
 }
 
-footer, header {
+footer {
     height: 30px;
     width: 100%;
     text-align: center;
     position: fixed;
 }
 
-header {
-background-color: grey;
-text-align: center;
-margin: 0px;
-}
+
+
 
