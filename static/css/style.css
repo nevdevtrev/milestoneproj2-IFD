@@ -16,9 +16,7 @@ body {
 position: fixed;
 width: 100%;
 top: 0px;
-}
-.bg-dark {
-    background-color: black;
+background-color: black;
 }
 
 footer {
@@ -26,6 +24,8 @@ footer {
     width: 100%;
     text-align: center;
     position: fixed;
+    bottom: 0px;
+    background-color: black;
 }
 
 .btn {
