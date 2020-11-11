@@ -11,13 +11,14 @@ body {
     color:grey;
 }
 
-.bg-dark {
-    background-color: black;
-}
+
 .navbar {
 position: fixed;
 width: 100%;
 top: 0px;
+}
+.bg-dark {
+    background-color: black;
 }
 
 footer {

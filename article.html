@@ -32,8 +32,7 @@
   </head>
 
   <body>
-
-  <!-- Navbar with topic options -->
+    <!-- Navbar with topic options -->
 
     <nav class="navbar navbar-light bg-dark d-flex justify-content-center">
       <form class="form-inline">
@@ -43,7 +42,11 @@
         <button id="sport" class="btn btn-outline-success" type="button">
           Sport
         </button>
-        <button id="entertainment" class="btn btn-outline-success" type="button">
+        <button
+          id="entertainment"
+          class="btn btn-outline-success"
+          type="button"
+        >
           Entertainment
         </button>
         <button id="business" class="btn btn-outline-success" type="button">
@@ -61,17 +64,16 @@
       </form>
     </nav>
 
- 
-    <div class="container-fluid">
+    <div class="container-fluid" id="singleArticlePage">
       <div id="singleArticle">
-       <div id=""></div>
-              <div id=""></div>
-                     <div id=""></div>
-                            <div id=""></div>
-                                   <div id=""></div>
-                                          <div id=""></div>
-                                          <a href="#mainpage"><button>Back To All Articles</button></a>
-      
+        <div id="newsTitle"></div>
+        <div id="newsDescription"></div>
+        <div id="newsSourceName"></div>
+        <div id="newsPublishedAt"></div>
+        <div id="newsImage"></div>
+        <div id="newsContent"></div>
+        <div id="getFullStory"></div>
+        <a href="#mainpage"><button>Back To All Articles</button></a>
       </div>
     </div>
     <footer class="fixed-bottom">&copy;2020 Neville Sexton</footer>
@@ -93,6 +95,6 @@
       integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
       crossorigin="anonymous"
     ></script>
-    <script type="text/javascript" src="/main.js"></script>
+    <script type="text/javascript" src="/static/js/main.js"></script>
   </body>
 </html>
