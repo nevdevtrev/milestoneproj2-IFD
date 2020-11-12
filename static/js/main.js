@@ -1,27 +1,36 @@
-const url = "https://gnews.io/api/v4/";
+const base = "https://gnews.io/api/v4/";
 const categories = ["headlines", "sport", "entertainment", "business", "arts", "world", "fashion"];
 
-for (let i = 0; i < categories.length; i++) {
-    topic = categories[i];
-    document.getElementById(topic).addEventListener("click", apiCALL);
-    console.log(typeof(topic));
-        console.log(typeof(apiCALL));
+// For loop for itertating category-based function calls
+// for (let i = 0; i < categories.length; i++) {
+//     topic = categories[i];
+//     document.getElementById(topic).addEventListener("click", apiCALL);
+//     console.log(typeof(topic));
+//         console.log(typeof(apiCALL));
+// }
+
+var url = new Object();
+url.headlines = "top-headlines?&country=ie&token=";
+url.sport = "search?q=sport&country=ie&token=";
+url.entertainment = "search?q=entertainment&country=ie&token";
+url.business = "search?q=business&country=ie&token=";
+url.arts = "search?q=arts&country=ie&token=";
+url.fashion = "search?q=fashion&country=ie&token=";
+url.world = "search?q=world&country=ie&token=";
+url.apikey = "21be1451239088fddf79953b709ddac0"; 
+
+
+var x;
+for (x in url){
+    document.getElementById("headlines").addEventListener("click", apiCALL);
+    console.log(typeof(x));
+    console.log(x);
 }
 
-// document.getElementById("headlines").addEventListener("click", headlinesCALL);
-// console.log(typeof(headlinesCALL));
-// document.getElementById("sport").addEventListener("click", sportCALL);
-// document.getElementById("entertainment").addEventListener("click", entertainmentCALL);
-// document.getElementById("arts").addEventListener("click", artsCALL);
-// document.getElementById("business").addEventListener("click", businessCALL);
-// document.getElementById("fashion").addEventListener("click", fashionCALL);
-// document.getElementById("world").addEventListener("click", worldCALL);
-
-
-
 function apiCALL() {
+
   fetch(
-    "https://gnews.io/api/v4/top-headlines?&country=ie&token=21be1451239088fddf79953b709ddac0"
+    base + url[category] + apikey
   )
     .then(function (response) {
       return response.json();
