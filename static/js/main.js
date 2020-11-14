@@ -18,19 +18,22 @@ url.arts = "search?q=arts&country=ie&token=";
 url.fashion = "search?q=fashion&country=ie&token=";
 url.world = "search?q=world&country=ie&token=";
 url.apikey = "21be1451239088fddf79953b709ddac0"; 
+url.test = "headlines";
 
-
-var x;
-for (x in url){
-    document.getElementById("headlines").addEventListener("click", apiCALL);
-    console.log(typeof(x));
-    console.log(x);
+for ( let i = 0; i < url.length; i++){
+for (let x in url){
+     category = Object.keys(url);
+     console.log(category[i]);
+    //  document.getElementById(category[x]).addEventListener("click", apiCALL);
+ 
 }
+}
+    //  document.getElementById(url.headlines).addEventListener("click", apiCALL);
 
 function apiCALL() {
 
   fetch(
-    base + url[category] + apikey
+    base + url.headlines + url.apikey
   )
     .then(function (response) {
       return response.json();
