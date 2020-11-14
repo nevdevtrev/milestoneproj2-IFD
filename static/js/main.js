@@ -1,13 +1,7 @@
 const base = "https://gnews.io/api/v4/";
-const categories = ["headlines", "sport", "entertainment", "business", "arts", "world", "fashion"];
+// document.getElementsByTagName("button").addEventListener("click", apiCALL);
 
 // For loop for itertating category-based function calls
-// for (let i = 0; i < categories.length; i++) {
-//     topic = categories[i];
-//     document.getElementById(topic).addEventListener("click", apiCALL);
-//     console.log(typeof(topic));
-//         console.log(typeof(apiCALL));
-// }
 
 var url = new Object();
 url.headlines = "top-headlines?&country=ie&token=";
@@ -17,43 +11,67 @@ url.business = "search?q=business&country=ie&token=";
 url.arts = "search?q=arts&country=ie&token=";
 url.fashion = "search?q=fashion&country=ie&token=";
 url.world = "search?q=world&country=ie&token=";
-url.apikey = "21be1451239088fddf79953b709ddac0"; 
-url.test = "headlines";
+url.apikey = "21be1451239088fddf79953b709ddac0";
 
-for ( let i = 0; i < url.length; i++){
-for (let x in url){
-     category = Object.keys(url);
-     console.log(category[i]);
-    //  document.getElementById(category[x]).addEventListener("click", apiCALL);
- 
+
+category = Object.keys(url);
+syntax = Object.values(url);
+console.log(syntax);
+for (let i = 0; i < category.length; i++) {
+  topic = '"#' + category[i] + '"';
+  console.log(topic);
+  $(document).ready(function () {
+    $(topic).on("click", function() {
+console.log(url.)
+      fetch(base + category[i] + url.apikey)
+
+        .then(function (response) {
+          return response.json();
+        })
+
+        .then(function (data) {
+          console.log(data);
+          data = data.articles;
+          let html = "";
+          data.forEach(function (item) {
+            html += `<li> ${item.title} + <img id="newsimage" src= ${item.image}> </li>`;
+            $("#articleList").css("list-style-type", "none");
+            document.getElementById("articleList").innerHTML = html;
+          });
+        })
+
+        .catch(function (err) {
+          console.log(err);
+        });
+    });
+  });
 }
-}
-    //  document.getElementById(url.headlines).addEventListener("click", apiCALL);
+
+//  document.getElementById(category[x]).addEventListener("click", apiCALL);
+
+// }
+//  document.getElementById(url.headlines).addEventListener("click", apiCALL);
 
 function apiCALL() {
-
-  fetch(
-    base + url.headlines + url.apikey
-  )
+  fetch(base + url.headlines + url.apikey)
     .then(function (response) {
       return response.json();
     })
 
-    .then(function(data) {
+    .then(function (data) {
       console.log(data);
       data = data.articles;
       let html = "";
-      data.forEach(function(item) {
-           html += `<li> ${item.title} + <img id="newsimage" src= ${item.image}> </li>`;
-            $("#articleList").css("list-style-type","none");
-           document.getElementById("articleList").innerHTML = html;
-      })
+      data.forEach(function (item) {
+        html += `<li> ${item.title} + <img id="newsimage" src= ${item.image}> </li>`;
+        $("#articleList").css("list-style-type", "none");
+        document.getElementById("articleList").innerHTML = html;
+      });
     })
     .catch(function (err) {
       console.log(err);
     });
 }
-
 
 function sportCALL() {
   fetch(
@@ -63,14 +81,14 @@ function sportCALL() {
       return response.json();
     })
 
-    .then(function(data) {
+    .then(function (data) {
       console.log(data);
       data = data.articles;
       let html = "";
-      data.forEach(function(item) {
-           html += `<li> ${item.title} + <img id="newsimage" src= ${item.image}> </li>`;
-           document.getElementById("display").innerHTML = html;
-      })
+      data.forEach(function (item) {
+        html += `<li> ${item.title} + <img id="newsimage" src= ${item.image}> </li>`;
+        document.getElementById("display").innerHTML = html;
+      });
     })
     .catch(function (err) {
       console.log(err);
@@ -85,14 +103,14 @@ function entertainmentCALL() {
       return response.json();
     })
 
-    .then(function(data) {
+    .then(function (data) {
       console.log(data);
       data = data.articles;
       let html = "";
-      data.forEach(function(item) {
-           html += `<li> ${item.title} + <img id="newsimage" src= ${item.image}> </li>`;
-           document.getElementById("articleList").innerHTML = html;
-      })
+      data.forEach(function (item) {
+        html += `<li> ${item.title} + <img id="newsimage" src= ${item.image}> </li>`;
+        document.getElementById("articleList").innerHTML = html;
+      });
     })
     .catch(function (err) {
       console.log(err);
@@ -107,15 +125,15 @@ function businessCALL() {
       return response.json();
     })
 
-    .then(function(data) {
+    .then(function (data) {
       console.log(data);
       data = data.articles;
       let html = "";
-      data.forEach(function(item) {
-      html += `<li data-toggle="collapse" data-target="#description"> <b>${item.title}</b> <br> <div id="description" class="collapse">${item.description}</div><a href="${item.url}">More...</a> <br> <img id="newsimage" src= ${item.image}> </li>`;
-           $("#articleList").css("list-style-type","none");
-           document.getElementById("articleList").innerHTML = html;
-      })
+      data.forEach(function (item) {
+        html += `<li data-toggle="collapse" data-target="#description"> <b>${item.title}</b> <br> <div id="description" class="collapse">${item.description}</div><a href="${item.url}">More...</a> <br> <img id="newsimage" src= ${item.image}> </li>`;
+        $("#articleList").css("list-style-type", "none");
+        document.getElementById("articleList").innerHTML = html;
+      });
     })
     .catch(function (err) {
       console.log(err);
@@ -130,14 +148,14 @@ function artsCALL() {
       return response.json();
     })
 
-    .then(function(data) {
+    .then(function (data) {
       console.log(data);
       data = data.articles;
       let html = "";
-      data.forEach(function(item) {
-           html += `<li> ${item.title} + <img id="newsimage" src= ${item.image}> </li>`;
-           document.getElementById("display").innerHTML = html;
-      })
+      data.forEach(function (item) {
+        html += `<li> ${item.title} + <img id="newsimage" src= ${item.image}> </li>`;
+        document.getElementById("display").innerHTML = html;
+      });
     })
     .catch(function (err) {
       console.log(err);
@@ -152,14 +170,14 @@ function fashionCALL() {
       return response.json();
     })
 
-    .then(function(data) {
+    .then(function (data) {
       console.log(data);
       data = data.articles;
       let html = "";
-      data.forEach(function(item) {
-           html += `<li> ${item.title} + <img id="newsimage" src= ${item.image}> </li>`;
-           document.getElementById("display").innerHTML = html;
-      })
+      data.forEach(function (item) {
+        html += `<li> ${item.title} + <img id="newsimage" src= ${item.image}> </li>`;
+        document.getElementById("display").innerHTML = html;
+      });
     })
     .catch(function (err) {
       console.log(err);
@@ -174,14 +192,14 @@ function worldCALL() {
       return response.json();
     })
 
-    .then(function(data) {
+    .then(function (data) {
       console.log(data);
       data = data.articles;
       let html = "";
-      data.forEach(function(item) {
-           html += `<li id="nostyle"> ${item.title} + <img id="newsimage" src= ${item.image}> </li>`;
-           document.getElementById("display").innerHTML = html;
-      })
+      data.forEach(function (item) {
+        html += `<li id="nostyle"> ${item.title} + <img id="newsimage" src= ${item.image}> </li>`;
+        document.getElementById("display").innerHTML = html;
+      });
     })
     .catch(function (err) {
       console.log(err);
