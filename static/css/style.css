@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
 img {
     Height:auto;
     width: 100%;
@@ -11,7 +13,40 @@ body {
     color:grey;
 }
 
+/* for keeping articles centred on the screen*/
+ul {
+    padding-left: 0px;
+}
 
+ul h1 {
+    font-family: 'Anton', sans-serif;
+    color:  #f7f1f1;
+}
+
+ul h7{
+    color:#b0ccb7;
+}
+li h3{
+    color: lightblue;
+    text-align: right;
+    display: inline-block;
+}
+li h4 {
+    color: white;
+}
+hr.list {
+    width: 50%;
+    border-top: 1px solid white;
+
+}
+
+i {
+    color:rgb(99, 122, 94);
+    font-size: 20px;
+}
+.fa-plus::after {
+    
+}
 .navbar {
 position: fixed;
 width: 100%;
