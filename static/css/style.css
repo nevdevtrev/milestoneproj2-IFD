@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lateef&display=swap');
 img {
     Height:auto;
     width: 100%;
@@ -33,6 +33,11 @@ li h3{
 }
 li h4 {
     color: white;
+    padding: 6px 8px;
+    background-color: rgb(23 23 23);
+    font-size: 14px;
+    line-height: 2;
+    font-family: 'Lateef', cursive;
 }
 hr.list {
     width: 50%;
