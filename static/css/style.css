@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lateef&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
 img {
     Height:auto;
     width: 100%;
@@ -17,27 +19,45 @@ body {
 ul {
     padding-left: 0px;
 }
-
+ul h1,h2,h3,h4,h7 {
+        padding-left:7px;
+}
 ul h1 {
     font-family: 'Anton', sans-serif;
     color:  #f7f1f1;
 }
-
+ul h6 {
+    text-align: center;
+    color: white;
+    font-family: 'Julius Sans One', sans-serif;
+}
 ul h7{
-    color:#b0ccb7;
+color: #b5b5c3;
+    font-size: 13px;
+}
+li {
+    background-color: #0e1310;
+    border-radius: 40px;
+}
+li a {
+    text-decoration: none;
 }
 li h3{
     color: lightblue;
-    text-align: right;
-    display: inline-block;
+    text-align: center;
+
 }
 li h4 {
-    color: white;
+    font-weight: 600;
+    color: #060606;
     padding: 6px 8px;
-    background-color: rgb(23 23 23);
-    font-size: 14px;
-    line-height: 2;
+    background-color: rgb(255 255 255);
+    font-size: 33px;
+    line-height: 1.1;
     font-family: 'Lateef', cursive;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
 }
 hr.list {
     width: 50%;
@@ -46,8 +66,11 @@ hr.list {
 }
 
 i {
-    color:rgb(99, 122, 94);
-    font-size: 20px;
+    color:rgb(188, 206, 184);
+    font-size: 40px;
+}
+i:hover {
+     color:rgb(196, 207, 40);
 }
 .fa-plus::after {
     

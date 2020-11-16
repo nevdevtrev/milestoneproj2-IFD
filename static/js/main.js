@@ -32,8 +32,7 @@ for (let i = 0; i < category.length; i++) {
         data = data.articles;
         let html = "";
         data.forEach(function (item, index) {
-          html += `<li> <br> <h1>${item.title}</h1> <h7>${item.publishedAt} | </h7><h7>News Source: ${item.source.name}</h7><br><br><img id="newsimage" src= ${item.image}><h4>${item.description}</h4><h3 data-toggle="collapse" data-target="#${index}"><i class="fas fa-plus"></i></h3><div id="${index}" class="collapse">For the full details please check out the source article at <a href="${item.url}" target="_self">${item.source.name}</a></div><br> </li> <br><hr class="list">`;
-          $("#articleList").css("list-style-type", "none");
+          html += `<li><h6>${item.source.name}</h6> <h1>${item.title}</h1> <h7>${item.publishedAt}</h7><br><br><img id="newsimage" src= ${item.image}><h4>${item.description}</h4><h3 data-toggle="collapse" data-target="#${index}"><br><a href="${item.url}" target="_self"><i class="fas fa-external-link-alt"></i></h3></a><br> </li> <br><hr class="list">`;
           document.getElementById("articleList").innerHTML = html;
         });
       })
