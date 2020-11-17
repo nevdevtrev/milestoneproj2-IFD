@@ -14,10 +14,28 @@ body {
     background-color: black;
     color:grey;
 }
-
-/* for keeping articles centred on the screen*/
+.container-fluid {
+    width: 90%;
+}
+.navbar-light .navbar-toggler {
+    border-color: rgba(0,0,0,.1);
+}
+.navbar-toggler {
+    background-color: rgb(59, 57, 57);
+    border-radius: 55%;
+}
+.navbar-toggler-icon {
+color: white;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
 ul {
     padding-left: 0px;
+    list-style-type: none;
 }
 ul h1,h2,h3,h4,h7 {
         padding-left:7px;
@@ -30,11 +48,13 @@ ul h6 {
     text-align: center;
     color: white;
     font-family: 'Julius Sans One', sans-serif;
+    padding-top: 6px;
 }
 ul h7{
 color: #b5b5c3;
     font-size: 13px;
 }
+/* curve the list background edges */
 li {
     background-color: #0e1310;
     border-radius: 40px;
@@ -47,6 +67,7 @@ li h3{
     text-align: center;
 
 }
+/* curve the bottom edges of the article description section*/
 li h4 {
     font-weight: 600;
     color: #060606;
@@ -62,7 +83,6 @@ li h4 {
 hr.list {
     width: 50%;
     border-top: 1px solid white;
-
 }
 
 i {
@@ -72,9 +92,7 @@ i {
 i:hover {
      color:rgb(196, 207, 40);
 }
-.fa-plus::after {
-    
-}
+
 .navbar {
 position: fixed;
 width: 100%;
@@ -92,10 +110,10 @@ footer {
 }
 
 .btn {
-        background-color: #6fbd2126;
+    background-color: #6fbd2126;
 }
 .btn:focus {
-    background-color: #007bff21;
+    background-color: #ffd900;
 }
 .btn-outline-success {
     color: #b1b9b3;
@@ -165,23 +183,22 @@ nav form button:hover {
 
 @media only screen and (min-width: 320px)    {
 
-div.container-fluid {
-    margin-top: 190px;
+ div.container-fluid {
+    margin-top: 65px;
+} 
+.navbar-toggler {
+    margin-bottom: 10px;
 }
 }
 
 @media only screen and (min-width: 354px)    {
 
-div.container-fluid {
-    margin-top: 140px;
-}
+
 }
 
 @media only screen and (min-width: 463px)    {
 
-div.container-fluid {
-    margin-top: 110px;
-}
+
 }
 
 @media only screen and (min-width: 866px)    {
