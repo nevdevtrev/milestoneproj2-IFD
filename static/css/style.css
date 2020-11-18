@@ -37,6 +37,7 @@ ul {
     padding-left: 0px;
     list-style-type: none;
 }
+
 ul h1,h2,h3,h4,h7 {
         padding-left:7px;
 }
@@ -54,6 +55,8 @@ ul h7{
 color: #b5b5c3;
     font-size: 13px;
 }
+
+
 /* curve the list background edges */
 li {
     background-color: #0e1310;

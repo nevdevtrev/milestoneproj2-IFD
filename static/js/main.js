@@ -1,5 +1,6 @@
 const base = "https://gnews.io/api/v4/";
 const apikey = "21be1451239088fddf79953b709ddac0";
+var divs = ["div1", "div2", "div3", "div4", "div5", "div6", "div7", "div8", "div9", "div10"];
 
  fetch("https://gnews.io/api/v4/top-headlines?&country=ie&token=21be1451239088fddf79953b709ddac0")
       .then(function (response) {
@@ -11,8 +12,10 @@ const apikey = "21be1451239088fddf79953b709ddac0";
         data = data.articles;
         let html = "";
         data.forEach(function (item, index) {
-          html += `<li><h6>${item.source.name}</h6> <h1>${item.title}</h1> <h7>${item.publishedAt}</h7><br><br><img id="newsimage" src= ${item.image}><h4>${item.description}</h4><h3 data-toggle="collapse" data-target="#${index}"><br><a href="${item.url}" target="_self"><i class="fas fa-external-link-alt"></i></h3></a><br> </li> <br><hr class="list"><br>`;
-          document.getElementById("articleList").innerHTML = html;
+            for (let x = 0; x < divs.length; x++) {
+          html += `<ul></ul><li><h6>${item.source.name}</h6> <h1>${item.title}</h1> <h7>${item.publishedAt}</h7><br><br><img id="newsimage" src= ${item.image}><h4>${item.description}</h4><h3 data-toggle="collapse" data-target="#${index}"><br><a href="${item.url}" target="_self"><i class="fas fa-external-link-alt"></i></h3></a><br></li> <br><hr class="list"><br></ul> `;
+          document.getElementById(divs[x]).innerHTML = html;
+            }
         });
       })
       .catch(function (err) {
