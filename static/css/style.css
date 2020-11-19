@@ -17,6 +17,11 @@ body {
 .container-fluid {
     width: 90%;
 }
+
+div.col-md-4 .li {
+height: 500px;
+overflow-y: scroll; 
+}
 .navbar-light .navbar-toggler {
     border-color: rgba(0,0,0,.1);
 }
