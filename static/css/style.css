@@ -16,11 +16,16 @@ body {
 }
 .container-fluid {
     width: 90%;
+    overflow: auto;
 }
-
+div.row {
+    /* height: 500px; */
+    
+}
 div.col-md-4 .li {
-height: 500px;
-overflow-y: scroll; 
+height: 600px;
+
+
 }
 .navbar-light .navbar-toggler {
     border-color: rgba(0,0,0,.1);
@@ -101,6 +106,8 @@ i:hover {
      color:rgb(196, 207, 40);
 }
 
+/* Navabr button icon styling*/
+
 .navbar {
 position: fixed;
 width: 100%;
@@ -119,9 +126,21 @@ footer {
 
 .btn {
     background-color: #6fbd2126;
+    border-radius: 0.95rem;
+    border: none;
 }
 .btn:focus {
-    background-color: #ffd900;
+background-color: #000000;
+    color: #ffedc6;
+    border: none;
+}
+button i {
+    font-size: 16px;
+    color: #ececec;
+    padding: 0px 1px 0px 0px;
+}
+button i:focus {
+    padding: 0px 1px 0px 0px;
 }
 .btn-outline-success {
     color: #b1b9b3;
@@ -137,15 +156,24 @@ footer {
 .btn-outline-success.focus, .btn-outline-success:focus {
     box-shadow: 0 0 0 0.2rem rgb(243 247 243 / 50%);
 }
-.btn-outline-success:not(:disabled):not(.disabled).active, .btn-outline-success:not(:disabled):not(.disabled):active, .show>.btn-outline-success.dropdown-toggle {
+/* .btn-outline-success:not(:disabled):not(.disabled).active, .btn-outline-success:not(:disabled):not(.disabled):active, .show>.btn-outline-success.dropdown-toggle {
     color: #fff;
     background-color: #617967;
     border-color: #748478;
-}
+} */
 nav form button {
     text-transform: uppercase;
     font-family: 'Akronim', cursive;
     margin: 0px 5px;
+ 
+    
+}
+nav form button:active {
+    text-transform: uppercase;
+    font-family: 'Akronim', cursive;
+    margin: 0px 5px;
+    border: none;
+    background-color:#000;
     box-shadow: 10px 8px 12px -6px #e9ecef;         /* shine settings  */
     -webkit-animation: shine 6s ease-in-out infinite alternate;
     -moz-animation: shine 6s ease-in-out infinite alternate;
@@ -155,7 +183,7 @@ nav form button {
 }
 
 nav form button:hover {
-    box-shadow: 10px 8px 12px 0px #e9ecef;
+    box-shadow: 1px 4px 7px -2px #e9ecef;
     transform: scale(1.2);
     -webkit-transition: .4s ease-in-out;              /* increasing div size over .8 seconds */
     -moz-transition: .4s ease-in-out;

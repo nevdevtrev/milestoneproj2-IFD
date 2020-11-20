@@ -5,7 +5,7 @@ const apikey = "21be1451239088fddf79953b709ddac0";
 var divs = ["div1", "div2", "div3", "div4", "div5", "div6", "div7", "div8", "div9", "div10"];
 
 // Default fetch for when page loads - Top 10 Headlines            
- fetch("https://gnews.io/api/v4/top-headlines?&country=ie&token=21be1451239088fddf79953b709ddac0")
+//  fetch("https://gnews.io/api/v4/top-headlines?&country=ie&token=21be1451239088fddf79953b709ddac0")
       .then(function (response) {
         return response.json();
       })
@@ -49,7 +49,7 @@ for (let x = 0; x < category.length; x++) {
 
   // function to make API call to GNews: use JSON method to transform DATA to JSON object, then handle that data for HTML display
   function apiCALL() {
-    fetch(base + syntax[x] + "21be1451239088fddf79953b709ddac0")
+    // fetch(base + syntax[x] + "21be1451239088fddf79953b709ddac0")
       .then(function (response) {
         return response.json();
       })
