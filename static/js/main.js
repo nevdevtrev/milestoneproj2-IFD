@@ -15,6 +15,16 @@ var divs = [
   "div10",
 ];
 
+// array for typewriter divs 
+var typeWriterDivs = ["type1",
+"type2",
+"type3",
+"type4",
+"type5",
+"type6",
+"type7"
+];
+
 // Default fetch for when page loads - Top 10 Headlines
 // fetch(
 //   "https://gnews.io/api/v4/top-headlines?&country=ie&token=21be1451239088fddf79953b709ddac0"
@@ -108,9 +118,9 @@ banners = Object.values(headliners);
 console.log(topic);
 console.log(banners);
     
-document.getElementById("typewriter").innerHTML = "";
+
     if (z < banners[x].length) {
-      document.getElementById("typewriter").innerHTML += banners[x].charAt(z);
+      document.getElementById(typeWriterDivs[x]).innerHTML += banners[x].charAt(z);
       z++;
       setTimeout(typeWriter, speed);
     }
