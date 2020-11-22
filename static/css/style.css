@@ -27,14 +27,16 @@ div.col-md-4 .li {
 height: 600px;
 }
 
-.row #typewriter {
+.row .typewriter {
     font-family: 'Amatic SC', cursive;
     color: white;
     font-size:50px;
     text-align:center;
     padding-bottom: 56px;
 }
-
+nav {
+    z-index: 1;
+}
 .navbar-light .navbar-toggler {
     border-color: rgba(0,0,0,.1);
 }
@@ -130,6 +132,8 @@ footer {
     position: fixed;
     bottom: 0px;
     background-color: black;
+    font-size: 25px;
+    margin-bottom: 2px;
 }
 
 .btn {
@@ -237,9 +241,9 @@ nav form button:hover {
 .row #typewriter {
     font-family: 'Amatic SC', cursive;
     color: white;
-    font-size:25px;
+    font-size:50px;
     text-align:center;
-
+    padding-bottom: 56px;
 }
 }
 
