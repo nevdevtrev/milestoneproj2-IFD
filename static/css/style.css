@@ -133,6 +133,7 @@ position: fixed;
 width: 100%;
 top: 0px;
 background-color: black;
+padding: 0.5rem 1rem 1.6rem;
 }
 
 footer {
@@ -236,8 +237,8 @@ nav form button:hover {
      }
 }
 
-/* Media Queries to style output across multiple devices */ 
-@media only screen and (min-width: 320px)    {
+/* Media Queries to style output across multiple devices from Galaxy fold to desktop */ 
+@media only screen and (min-width: 280px)    {
 
  div.container-fluid {
     margin-top: 65px;
@@ -254,6 +255,11 @@ nav form button:hover {
 }
 .btn {
     margin-bottom: 3px;
+}
+nav form button {
+    text-transform: uppercase;
+    font-family: 'Akronim', cursive;
+    margin: 0px 5px;
 }
 }
 

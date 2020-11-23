@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 const base = "https://gnews.io/api/v4/";
 const apikey = "21be1451239088fddf79953b709ddac0";
 
@@ -27,7 +28,7 @@ fetch(
     data = data.articles;
     let html = "";
     // For loop to seperate each article into individual divs - so rows/cols can be used to responsively layout
-    for (i = 0; i < data.length; i++) {
+    for (let i = 0; i < data.length; i++) {
       console.log(data[i]);
       html = `<ul><li id="storyli"><h6>${data[i].source.name}</h6> <h1>${data[i].title}</h1> <h7>${data[i].publishedAt}</h7><br><br><img id="newsimage" src= ${data[i].image}><h4>${data[i].description}</h4><h3><br><a href="${data[i].url}" target="_self"><i class="fas fa-external-link-alt"></i></a></h3><br> </li></ul><br><hr class="list"><br>`;
       document.getElementById(divs[i]).innerHTML += html;
@@ -48,8 +49,8 @@ url.arts = "search?q=arts&country=ie&token=";
 url.world = "search?q=world&country=ie&token=";
 
 // Generate arrays from url object for use in iterating through apiCALL universal function
-category = Object.keys(url);
-endpoint = Object.values(url);
+var category = Object.keys(url);
+var endpoint = Object.values(url);
 console.log(endpoint);
 console.log(category);
 
@@ -77,7 +78,7 @@ for (let x = 0; x < category.length; x++) {
         data = data.articles;
         let html = "";
         // For loop to seperate each article into individual divs - so rows/cols can be used to responsively layout
-        for (i = 0; i < data.length; i++) {
+        for (let i = 0; i < data.length; i++) {
           console.log(data[i]);
           html = `<ul><li id="storyli"><h6>${data[i].source.name}</h6> <h1>${data[i].title}</h1> <h7>${data[i].publishedAt}</h7><br><br><img id="newsimage" src= ${data[i].image}><h4>${data[i].description}</h4><h3><br><a href="${data[i].url}" target="_self"><i class="fas fa-external-link-alt"></i></a></h3><br> </li></ul><br><hr class="list"><br>`;
           document.getElementById(divs[i]).innerHTML += html;
