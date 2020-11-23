@@ -37,6 +37,9 @@ height: 600px;
 nav {
     z-index: 1;
 }
+.navbar-collapse {
+    justify-content: center;
+}
 .navbar-light .navbar-toggler {
     border-color: rgba(0,0,0,.1);
 }
@@ -72,14 +75,21 @@ ul h6 {
     padding-top: 6px;
 }
 ul h7{
-color: #b5b5c3;
-    font-size: 13px;
+    color: #b5b5c3;
+    font-size: 20px;
+    font-family: fangsong;
 }
 
+.row {
+  display: flex; /* equal height of the children */
+}
 
+.col {
+  flex: 1; /* additionally, equal width */
+}
 /* curve the list background edges */
 li {
-    background-color: #0e1310;
+    background-color: #262927;
     border-radius: 40px;
 }
 li a {
@@ -126,14 +136,13 @@ background-color: black;
 }
 
 footer {
-    height: 30px;
+    height: 35px;
     width: 100%;
     text-align: center;
     position: fixed;
     bottom: 0px;
     background-color: black;
     font-size: 25px;
-    margin-bottom: 2px;
 }
 
 .btn {
@@ -177,8 +186,6 @@ nav form button {
     text-transform: uppercase;
     font-family: 'Akronim', cursive;
     margin: 0px 5px;
- 
-    
 }
 nav form button:active {
     text-transform: uppercase;
@@ -245,6 +252,9 @@ nav form button:hover {
     text-align:center;
     padding-bottom: 56px;
 }
+.btn {
+    margin-bottom: 3px;
+}
 }
 
 @media only screen and (min-width: 354px)    {
@@ -260,7 +270,13 @@ nav form button:hover {
     padding-bottom: 56px;
     padding-top: 25px;
 }
-
+.navbar-expand-md .navbar-collapse {
+    display: -ms-flexbox!important;
+    display: flex!important;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+    justify-content: center;
+}
 }
 
 @media only screen and (min-width: 866px)    {
