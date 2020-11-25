@@ -185,7 +185,7 @@ button i:focus {
 } */
 nav form button {
     text-transform: uppercase;
-    font-family: 'Akronim', cursive;
+    /* font-family: 'Akronim', cursive; */
     margin: 0px 5px;
 }
 nav form button:active {
@@ -205,7 +205,7 @@ nav form button:active {
 nav form button:hover {
     box-shadow: 1px 4px 7px -2px #e9ecef;
     transform: scale(1.2);
-    -webkit-transition: .4s ease-in-out;              /* increasing div size over .8 seconds */
+    -webkit-transition: .4s ease-in-out;              /* increasing div size over total .8 seconds */
     -moz-transition: .4s ease-in-out;
     -o-transition: .4s ease-in-out;
     transition: .4s ease-in-out;
@@ -255,11 +255,11 @@ nav form button:hover {
 }
 .btn {
     margin-bottom: 3px;
-        font-family: 'Akronim', cursive;
+        /* font-family: 'Akronim', cursive; */
 }
 nav form button {
     text-transform: uppercase;
-    font-family: 'Akronim', cursive;
+    /* font-family: 'Akronim', cursive; */
     margin: 0px 5px;
 }
 }
