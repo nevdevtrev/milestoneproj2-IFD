@@ -1,4 +1,5 @@
 /*jshint esversion: 6 */
+
 const base = "https://gnews.io/api/v4/";
 const apikey = "21be1451239088fddf79953b709ddac0";
 
@@ -115,4 +116,16 @@ for (let x = 0; x < category.length; x++) {
       setTimeout(typeWriter, speed);
     }
   }
+}
+
+// to make the navbar disappear upon scrolling - taken from w3schools.com
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-100px";
+  }
+  prevScrollpos = currentScrollPos;
 }
