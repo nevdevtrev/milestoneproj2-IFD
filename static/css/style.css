@@ -152,6 +152,10 @@ footer {
     border-radius: 0.95rem;
     border: none;
 }
+button {
+    font-family: 'Castoro', serif;
+    font-size: 16px;
+}
 .btn:focus {
 background-color: #000000;
     color: #ffedc6;
@@ -187,6 +191,7 @@ button i:focus {
 nav form button {
     text-transform: uppercase;
     font-family: 'Castoro', serif;
+    font-size: 16px;
     margin: 0px 5px;
 }
 nav form button:active {
@@ -261,6 +266,7 @@ nav form button:hover {
 nav form button {
     text-transform: uppercase;
     font-family: 'Castoro', serif;
+    font-size: 16px;
     margin: 0px 5px;
 }
 }
