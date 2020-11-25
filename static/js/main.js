@@ -30,7 +30,7 @@ fetch(
     // For loop to seperate each article into individual divs - so rows/cols can be used to responsively layout
     for (let i = 0; i < data.length; i++) {
       console.log(data[i]);
-      html = `<ul><li id="storyli"><h6>${data[i].source.name}</h6> <h1>${data[i].title}</h1> <h7>${data[i].publishedAt}</h7><br><br><img id="newsimage" src= ${data[i].image}><h4>${data[i].description}</h4><h3><br><a href="${data[i].url}" target="_self"><i class="fas fa-external-link-alt"></i></a></h3><br> </li></ul><br><hr class="list"><br>`;
+      html = `<ul><li id="storyli"><h6>${data[i].source.name}</h6> <h1>${data[i].title}</h1> <h7>${data[i].publishedAt}</h7><br><br><img id="newsimage" src= ${data[i].image}><h4>${data[i].description}</h4><h3><br><a href="${data[i].url}" target="_self" aria-label="link to the original article in full"><i class="fas fa-external-link-alt" aria-hidden="true"></i></a></h3><br> </li></ul><br><hr class="list"><br>`;
       document.getElementById(divs[i]).innerHTML += html;
     }
   })

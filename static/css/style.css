@@ -255,6 +255,7 @@ nav form button:hover {
 }
 .btn {
     margin-bottom: 3px;
+        font-family: 'Akronim', cursive;
 }
 nav form button {
     text-transform: uppercase;

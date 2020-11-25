@@ -12,12 +12,14 @@ It's designed to be responsive on all devices.
 ## Technologies/Languages
 
 1. HTML
-2. Boostrap
+2. Boostrap 4
 3. Flexbox Grid System
 4. CSS3
 5. JavaScript
 6. Github
-7. AWS Cloud 9
+7. Gitpod
+8. Fontawesome
+9. Google Fonts
 
 
 ## Design - UX
@@ -29,9 +31,10 @@ database of their readers/fans is an essential tool for any author's marketing t
 subscriber turnover I placed a simple email-input bootstrap toast component on the initial landing page to the website. This is closeable,
 and ignorable, for any exisiting subscribers but is front-of-house for all new visitors to the site. 
 
-The site is designed as a mobile first single, multi-sectioned, page with top navigation bar links (collapsible on small devices) to books, events, media,
-blog, contact and author information. Sections are reached through a smooth scrollspy effect, again keeping the user
-experience as simple and pleasant as possible. I've also utilised a fixed footer for quick access to author social links.
+The app is designed as a mobile first single page site with top navigation bar links (collapsible on small devices) to a selection of
+news categories, namely: 'Headlines','Sport', 'Business','Arts','Fashion', 'World' and 'Entertainment'. Each category is a 
+separate menu button keeping the experience as simple and pleasant as possible. I've also utilised a fixed footer with basic copyright 
+information. 
 
 The use of max-width containers was put in place to allow for a better visual experience for visitors on larger screens. The resulting narrower stream
 of content gives a far better user experience for readability and content presentation.
