@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lateef&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Castoro&display=swap');
 
 img {
     Height:auto;
@@ -185,12 +186,12 @@ button i:focus {
 } */
 nav form button {
     text-transform: uppercase;
-    /* font-family: 'Akronim', cursive; */
+    font-family: 'Castoro', serif;
     margin: 0px 5px;
 }
 nav form button:active {
     text-transform: uppercase;
-    font-family: 'Akronim', cursive;
+    font-family: 'Castoro', serif;
     margin: 0px 5px;
     border: none;
     background-color:#000;
@@ -259,7 +260,7 @@ nav form button:hover {
 }
 nav form button {
     text-transform: uppercase;
-    /* font-family: 'Akronim', cursive; */
+    font-family: 'Castoro', serif;
     margin: 0px 5px;
 }
 }
