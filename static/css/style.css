@@ -27,13 +27,14 @@ body {
 .container-fluid {
     width: 90%;
     overflow: auto;
+cursor: pointer;
 }
 div.row {
-    /* height: 500px; */
-    
+    cursor: pointer;
 }
 div.col-md-4 .li {
 height: 600px;
+cursor: pointer;
 }
 
 .row .typewriter {
