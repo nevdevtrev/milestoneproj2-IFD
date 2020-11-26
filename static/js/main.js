@@ -118,7 +118,7 @@ for (let x = 0; x < category.length; x++) {
   }
 }
 
-// to make the navbar disappear upon scrolling - taken from w3schools.com
+// to make the navbar disappear upon scrolling - modified from w3schools.com
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
 var currentScrollPos = window.pageYOffset;
