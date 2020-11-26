@@ -131,11 +131,3 @@ window.onscroll = function () {
   prevScrollpos = currentScrollPos;
 };
 
-
-  if ( /^((?!chrome|android).)*safari/i.test(navigator.userAgent)) {
-    var clickableElements = ".x-anchor-toggle, button, .x-anchor-button, li.menu-item, input.submit, .x-scroll-top";
-    jQuery(clickableElements).attr("style", "cursor: pointer;");
-    jQuery(clickableElements).bind( "touchend", function(e) {
-      jQuery(this).trigger("click");
-    });
-  }
