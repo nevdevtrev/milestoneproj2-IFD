@@ -1,12 +1,8 @@
-# Neville Sexton - Author Website
+# Neville Sexton - Newsround
 
-Code Institute - Milestone Project1: User Centric frontend Development.
+Code Institute - Milestone ProjectII: Interactive frontend Development.
 
-My project is an author website. It serves two functions: firstly to act 
-as shop window to potential readers, displaying books, videos and information
-relevant to the author, and secondly, as a landing page whereby the author can grow
-an email subscriber list based on a free book offering when email details are supplied. 
-It's designed to be responsive on all devices. 
+TBA
 
 [![GitHub issues](https://img.shields.io/github/issues/nevdevtrev/milestoneproj2-IFD?style=plastic)](https://github.com/nevdevtrev/milestoneproj2-IFD/issues)
 ## Technologies/Languages
