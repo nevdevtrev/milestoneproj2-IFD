@@ -32,7 +32,7 @@ body {
     overflow: auto;
 cursor: pointer;
 }
-#headlines, #sport, #fashion, #arts, #business, #entertainment {
+div#headlines, div#sport, div#fashion, div#arts, div#business, div#entertainment {
     cursor: pointer;
 }
 div.row {
