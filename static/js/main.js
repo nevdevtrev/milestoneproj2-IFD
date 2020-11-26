@@ -64,10 +64,10 @@ for (let x = 0; x < category.length; x++) {
   // function to make API call to GNews: use JSON method to transform DATA to JSON object, then handle that data for HTML display
 
   function apiCALL() {
-    // $(document).ready(function () {
-    //   // Clear the articles Divs ahead of each new api call
-    //   $(".allarticles .articles").empty();
-    // });
+    $(document).ready(function () {
+      // Clear the articles Divs ahead of each new api call
+      $(".allarticles .articles").empty();
+    });
     fetch(base + endpoint[x] + "21be1451239088fddf79953b709ddac0") // api call
       .then(function (response) {
         return response.json();
