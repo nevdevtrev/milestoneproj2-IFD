@@ -131,3 +131,10 @@ window.onscroll = function () {
   prevScrollpos = currentScrollPos;
 };
 
+document.onclick = function () {
+	var newDiv = document.createElement('div');
+	// populate div
+	newDiv.onclick = function () {};
+	document.body.appendChild(newDiv);
+}
+div.onclick = function () {}
