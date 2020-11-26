@@ -18,6 +18,7 @@ var divs = [
 ];
 
 // Default fetch for when page loads - Top 10 Headlines
+
 fetch(
   "https://gnews.io/api/v4/top-headlines?&country=ie&token=21be1451239088fddf79953b709ddac0"
 )
@@ -31,7 +32,7 @@ fetch(
     // For loop to seperate each article into individual divs - so rows/cols can be used to responsively layout
     for (let i = 0; i < data.length; i++) {
       console.log(data[i]);
-      html = `<ul><li id="storyli"><h6>${data[i].source.name}</h6> <h1>${data[i].title}</h1> <h7>${data[i].publishedAt}</h7><br><br><img id="newsimage" src= ${data[i].image}><h4>${data[i].description}</h4><h3><br><a href="${data[i].url}" target="_self" aria-label="link to the original article in full"><i class="fas fa-external-link-alt" aria-hidden="true"></i></a></h3><br> </li></ul><br><hr class="list"><br>`;
+      html = `<ul><li id="storyli"><h6>${data[i].source.name}</h6> <h1>${data[i].title}</h1> <h7>${data[i].publishedAt}</h7><br><br><img id="newsimage" data= ${data[i].image}><h4>${data[i].description}</h4><h3><br><a href="${data[i].url}" target="_self" aria-label="link to the original article in full"><i class="fas fa-external-link-alt" aria-hidden="true"></i></a></h3><br> </li></ul><br><hr class="list"><br>`;
       document.getElementById(divs[i]).innerHTML += html;
     }
   })
@@ -61,15 +62,13 @@ for (let x = 0; x < category.length; x++) {
   document.getElementById(category[x]).addEventListener("click", apiCALL);
 
   // function to make API call to GNews: use JSON method to transform DATA to JSON object, then handle that data for HTML display
-  function apiCALL() {
 
-    // Clear the articles Divs ahead of each new api call
+  function apiCALL() {
     $(document).ready(function () {
+      // Clear the articles Divs ahead of each new api call
       $(".allarticles .articles").empty();
     });
-
-    // api call
-    fetch(base + endpoint[x] + "21be1451239088fddf79953b709ddac0")
+    fetch(base + "search?q=business&country=ie&token=" + "21be1451239088fddf79953b709ddac0") // api call
       .then(function (response) {
         return response.json();
       })
@@ -78,10 +77,10 @@ for (let x = 0; x < category.length; x++) {
         console.log(endpoint[x]);
         data = data.articles;
         let html = "";
-        // For loop to seperate each article into individual divs - so rows/cols can be used to responsively layout
         for (let i = 0; i < data.length; i++) {
+          // For loop to seperate each article into individual divs - so rows/cols can be used to responsively layout
           console.log(data[i]);
-          html = `<ul><li id="storyli"><h6>${data[i].source.name}</h6> <h1>${data[i].title}</h1> <h7>${data[i].publishedAt}</h7><br><br><img id="newsimage" src= ${data[i].image}><h4>${data[i].description}</h4><h3><br><a href="${data[i].url}" target="_self"><i class="fas fa-external-link-alt"></i></a></h3><br> </li></ul><br><hr class="list"><br>`;
+          html = `<ul><li id="storyli"><h6>${data[i].source.name}</h6> <h1>${data[i].title}</h1> <h7>${data[i].publishedAt}</h7><br><br><img id="newsimage" src= ${data[i].image}><h4>${data[i].description}</h4><h3><br><a href="${data[i].url}" target="_blank"><i class="fas fa-external-link-alt"></i></a></h3><br> </li></ul><br><hr class="list"><br>`;
           document.getElementById(divs[i]).innerHTML += html;
         }
       })
@@ -91,6 +90,7 @@ for (let x = 0; x < category.length; x++) {
   }
 
   // Typewriter effect for Title
+
   var z = 0;
   var speed = 50;
   var txt = "Irish News Live As It Happens...";
@@ -119,13 +119,14 @@ for (let x = 0; x < category.length; x++) {
 }
 
 // to make the navbar disappear upon scrolling - modified from w3schools.com
+
 var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-var currentScrollPos = window.pageYOffset;
+window.onscroll = function () {
+  var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("navbar").style.top = "0";
   } else {
     document.getElementById("navbar").style.top = "-300px";
   }
   prevScrollpos = currentScrollPos;
-}
+};
