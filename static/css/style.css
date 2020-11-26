@@ -29,6 +29,9 @@ body {
     overflow: auto;
 cursor: pointer;
 }
+#headlines, #sport, #fashion, #arts, #business, #entertainment {
+    cursor: pointer;
+}
 div.row {
     cursor: pointer;
 }
