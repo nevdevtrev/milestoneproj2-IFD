@@ -222,7 +222,7 @@ button i:focus {
     border-color: #748478;
 } */
 
-div#entertainment, div#sport {
+button#entertainment, button#sport {
      cursor: pointer;
 }
 nav form button {
