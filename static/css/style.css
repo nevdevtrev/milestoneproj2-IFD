@@ -12,7 +12,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Castoro&display=swap');
 
 
-* {     /* To receive click events on iOS */     cursor: pointer;     }
+* {    
+    cursor: pointer;
+}
 
 img {
     Height:auto;
@@ -184,6 +186,7 @@ footer {
 button {
     font-family: 'Castoro', serif;
     font-size: 16px;
+    cursor: pointer;
 }
 .btn:focus {
 background-color: #000000;
@@ -218,6 +221,10 @@ button i:focus {
     background-color: #617967;
     border-color: #748478;
 } */
+
+div#entertainment, div#sport {
+     cursor: pointer;
+}
 nav form button {
     text-transform: uppercase;
     font-family: 'Castoro', serif;

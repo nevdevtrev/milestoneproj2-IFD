@@ -59,11 +59,11 @@ console.log(category);
 // For loop for itertating through category-based function calls
 
 for (let x = 0; x < category.length; x++) {
-  document.getElementById(category[x]).addEventListener("click", apiCALL);
+//   document.getElementById(category[x]).addEventListener("click", apiCALL);
 
     $(document).ready(function () {
-      // jquery alternative to work with cursor: pointer; css for ios issue
-      $("#business").on("click", apiCALL);
+      // jquery alternative to work with [cursor: pointer; css issue for ios]
+      $('#' + category[x]).on("click", apiCALL);
     });
 
 
@@ -74,7 +74,7 @@ for (let x = 0; x < category.length; x++) {
       // Clear the articles Divs ahead of each new api call
       $(".allarticles .articles").empty();
     });
-    fetch(base + endpoint[x] + "21be1451239088fddf79953b709ddac0") // api call
+    fetch(base + endpoint[x] + apikey) // api call
       .then(function (response) {
         return response.json();
       })
@@ -95,7 +95,7 @@ for (let x = 0; x < category.length; x++) {
       });
   }
 
-  // Typewriter effect for Title
+//   // Typewriter effect for Title
 
   var z = 0;
   var speed = 50;
