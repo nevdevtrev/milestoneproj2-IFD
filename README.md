@@ -4,8 +4,8 @@ Code Institute - Milestone ProjectII: Interactive frontend Development.
 
 TBA
 
-https://img.shields.io/badge/MadeBy-nevdevtrev-blue
 
+[![GitHub madeby](https://img.shields.io/github/madeby/nevdevtrev/milestoneproj2-IFD?style=plastic)](https://github.com/nevdevtrev/milestoneproj2-IFD/madeby)
 
 ## Technologies/Languages
 
