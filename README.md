@@ -4,7 +4,9 @@ Code Institute - Milestone ProjectII: Interactive frontend Development.
 
 TBA
 
-[![GitHub issues](https://img.shields.io/github/issues/nevdevtrev/milestoneproj2-IFD?style=plastic)](https://github.com/nevdevtrev/milestoneproj2-IFD/issues)
+[https://img.shields.io/badge/MadeBy-nevdevtrev-blue]
+
+
 ## Technologies/Languages
 
 1. HTML
