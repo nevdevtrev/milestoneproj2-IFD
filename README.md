@@ -4,8 +4,10 @@ Code Institute - Milestone ProjectII: Interactive frontend Development.
 
 TBA
 
-
-[![GitHub madeby](https://img.shields.io/github/madeby/nevdevtrev/milestoneproj2-IFD?style=plastic)](https://github.com/nevdevtrev/milestoneproj2-IFD/madeby)
+[![GitHub forks](https://img.shields.io/github/forks/nevdevtrev/milestoneproj2-IFD?style=plastic)](https://github.com/nevdevtrev/milestoneproj2-IFD/network)
+[![GitHub stars](https://img.shields.io/github/stars/nevdevtrev/milestoneproj2-IFD?color=orange&style=plastic)](https://github.com/nevdevtrev/milestoneproj2-IFD/stargazers)
+[![GitHub license](https://img.shields.io/github/license/nevdevtrev/milestoneproj2-IFD?color=pink&style=plastic)](https://github.com/nevdevtrev/milestoneproj2-IFD)
+[![GitHub issues](https://img.shields.io/github/issues/nevdevtrev/milestoneproj2-IFD?color=blue&style=plastic)](https://github.com/nevdevtrev/milestoneproj2-IFD/issues)
 
 ## Technologies/Languages
 
