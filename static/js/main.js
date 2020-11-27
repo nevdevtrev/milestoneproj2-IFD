@@ -61,6 +61,12 @@ console.log(category);
 for (let x = 0; x < category.length; x++) {
   document.getElementById(category[x]).addEventListener("click", apiCALL);
 
+    $(document).ready(function () {
+      // jquery alternative to work with cursor: pointer; css for ios issue
+      $("#business").on("click", apiCALL);
+    });
+
+
   // function to make API call to GNews: use JSON method to transform DATA to JSON object, then handle that data for HTML display
 
   function apiCALL() {
