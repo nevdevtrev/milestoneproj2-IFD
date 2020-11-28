@@ -222,7 +222,7 @@ button i:focus {
     border-color: #748478;
 } */
 
-button#entertainment, button#sport {
+button#entertainment, button#sport {     /* css test styling for non-clickable ios issue - sport and entertainment buttons*/  
      cursor: pointer;
 }
 nav form button {
