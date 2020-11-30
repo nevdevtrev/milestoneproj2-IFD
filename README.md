@@ -114,7 +114,7 @@ Should you wish to clone this simply:
 3. In the Clone with HTTPs section, click the copy icon to copy the clone URL for the repository.
 4. Open Git Bash.
 5. Change the current working directory to the location where you want the cloned directory to be made.
-6. Type git clone, and then paste the URL you copied in Step 2. ie. git clone https://github.com/nevdevtrev/project1-author-site.git
+6. Type git clone, and then paste the URL you copied in Step 2. ie. git clone https://github.com/nevdevtrev/milestoneproj2-IFD.git
 7. Press Enter. Your local clone will be created.
 
 Cloning a repository to GitHub Desktop:
