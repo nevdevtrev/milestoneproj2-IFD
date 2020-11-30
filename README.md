@@ -9,10 +9,13 @@ TBA
 [![GitHub license](https://img.shields.io/github/license/nevdevtrev/milestoneproj2-IFD?color=pink&style=plastic)](https://github.com/nevdevtrev/milestoneproj2-IFD)
 [![GitHub issues](https://img.shields.io/github/issues/nevdevtrev/milestoneproj2-IFD?color=blue&style=plastic)](https://github.com/nevdevtrev/milestoneproj2-IFD/issues)
 
+
+![Newsround on all devices](assets/images/devices-screenshot.png)
+
 ## Technologies/Languages
 
-1. HTML
-2. Boostrap 4
+1. HTML5
+2. Boostrap 4 framework
 3. Flexbox Grid System
 4. CSS3
 5. JavaScript
