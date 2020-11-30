@@ -58,7 +58,7 @@ these will replace the previously called articles.
 
 #### Skeleton Plane
 
-The outline wireframe drawings for this site are located [here]. This is the fundamental outline of how the site renders across differing devices
+The outline wireframe drawings for this site are located [here](assets/images/wirframe/wireframe.jpg). This is the fundamental outline of how the site renders across differing devices
 
 #### Surface Plane 
 
@@ -96,10 +96,6 @@ A: The site is very straight-forward. It's single page and requires from the use
    preference. These buttons generate 10 new category-based articles in the same page all of which are displayed responsively depending on the device being used. 
    Should the user which to further read any article they are offered a clickable link to bring them to the original newsmedia source site. 
 
-### UX - Returning Visitor
-
-Q: As a returning visitor is the site efficiently structured for quick access to favourites, and contactibility??
-A: 
    
 ## Deployment
 
