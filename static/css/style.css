@@ -216,15 +216,7 @@ button i:focus {
     -webkit-box-shadow: 0 0 0 0.2rem rgb(243 247 243 / 50%);
             box-shadow: 0 0 0 0.2rem rgb(243 247 243 / 50%);
 }
-/* .btn-outline-success:not(:disabled):not(.disabled).active, .btn-outline-success:not(:disabled):not(.disabled):active, .show>.btn-outline-success.dropdown-toggle {
-    color: #fff;
-    background-color: #617967;
-    border-color: #748478;
-} */
 
-button#entertainment, button#sport {     /* css test styling for non-clickable ios issue - sport and entertainment buttons*/  
-     cursor: pointer;
-}
 nav form button {
     text-transform: uppercase;
     font-family: 'Castoro', serif;

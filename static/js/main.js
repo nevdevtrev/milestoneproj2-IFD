@@ -59,7 +59,6 @@ console.log(category);
 // For loop for itertating through category-based function calls
 
 for (let x = 0; x < category.length; x++) {
-//   document.getElementById(category[x]).addEventListener("click", apiCALL);
 
     $(document).ready(function () {
       // jquery alternative to work with [cursor: pointer; css issue for ios]
@@ -95,27 +94,13 @@ for (let x = 0; x < category.length; x++) {
       });
   }
 
-//   // Typewriter effect for Title
+// Typewriter effect for Title
 
   var z = 0;
   var speed = 50;
   var txt = "Irish News Live As It Happens...";
 
   function typeWriter() {
-    // var headliners = new Object();
-    // headliners.headlines = "Top 10 Irish Headlines Live as it Happens";
-    // headliners.sport = "Irish Sports News Live as it Happens";
-    // headliners.entertainment = "Irish Entertainment News Live as it Happens";
-    // headliners.business = "Irish Business News Live as it Happens";
-    // headliners.fashion = "Irish Fashion News Live as it Happens";
-    // headliners.arts = "Irish Arts News Live as it Happens";
-    // headliners.world = "Irish World News Live as it Happens";
-
-    // topic = Object.keys(headliners);
-    // banners = Object.values(headliners);
-    // console.log(topic);
-    // console.log(banners);
-
     if (z < txt.length) {
       document.getElementById("typewriter").innerHTML += txt.charAt(z);
       z++;
